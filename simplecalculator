@@ -1,0 +1,37 @@
+// get input values		
+Scanner input = new Scanner (System.in);
+System.out.println("Enter the first value ");
+float val1 = input.nextFloat();
+Scanner input1 = new Scanner (System.in);
+System.out.println("Enter the second value ");
+float val2 = input1.nextFloat();
+
+//get operator
+Scanner input2 = new Scanner (System.in);
+System.out.println("What operator would you like? (+,-,*,/) ");
+String operator = input2.next();
+
+//perform actions
+if (operator.contentEquals("+")) {
+	float sum = val1 + val2;
+	System.out.println(sum);
+}
+
+if (operator.contentEquals("-")) {
+	float sub = val1 - val2;
+	System.out.println(sub);
+}
+	
+if (operator.contentEquals("*")) {
+	float product = val1 * val2;
+	System.out.println(product);
+}
+
+if (operator.contentEquals("/")) {
+	float divide = val1 / val2;
+	System.out.println(divide);
+}
+	
+	
+}
+}
