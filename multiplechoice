@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class MultipleChoice {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner input = new Scanner (System.in);
+System.out.println("What is 9+10? A)15, B)21, C)20, D)19 ");
+String ans = input.next();
+
+	if (ans.contentEquals("A")) {
+		System.out.println("5 points");
+		}
+	if (ans.contentEquals("B")) {
+		System.out.println("10 points");
+	}
+	if (ans.contentEquals("C")) {System.out.println("15 points");}
+	if (ans.contentEquals("D")) {System.out.println("40 points");}
+	
+	}
+}
