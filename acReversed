@@ -1,0 +1,44 @@
+import java.util.Arrays;
+public class acReversed {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// Question A
+	
+		String [] activities = {"Phone a friend","Play in the backyard","Make lunch for the family","Water the plants ","Create a board game"};
+		String activitiesReversed[] = new String[5];
+
+
+	
+		System.out.println("The length for activities is " + activities.length);
+		System.out.println("The length for activitiesReversed is " + activitiesReversed.length);
+
+		// Question B
+	
+		int indOne;
+		int indTwo = 4;
+
+		//Loop needed to reverse the array
+		for(indOne = 0; indOne <=4; indOne++)
+
+		{
+		{
+		activitiesReversed[indOne] = activities[indTwo];
+		indTwo = indTwo -1 ;
+
+
+
+
+		}
+		}//To end loop
+
+		 //Print reversed activities and arrays
+		System.out.println(" ");
+		System.out.println(activitiesReversed[0]);
+		System.out.println(activitiesReversed[1]);
+		System.out.println(activitiesReversed[2]);
+		System.out.println(activitiesReversed[3]);
+		System.out.println(activitiesReversed[4]);
+	}
+
+}
