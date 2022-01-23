@@ -1,0 +1,54 @@
+//Name: Ishan Bhatt
+//Purpose:To get the sum, min max values and the average of all of the elements in the array.
+//Date:5/7/2020
+import java.util.Arrays;
+public class aHundred2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int [] aHundred;
+		aHundred = new int [100];
+
+		for (int i=0; i<aHundred.length;i++) {
+				
+				aHundred[i] =(int)(Math.random()*((5000-1000)+1))+1000;
+				
+				
+		}
+		System.out.println(Arrays.toString(aHundred));
+		//Maximum value
+		int max = aHundred[0];
+		for(int index = 1; index < 100; index++) {
+			if(aHundred[index] > max) {
+				max = aHundred[index];
+							
+				}
+			}
+
+		//Minimum Value
+		int min = aHundred[0];
+		for(int index = 1; index < 100; index++) {
+			if(aHundred[index] < min) {
+				max = aHundred[index];
+							
+		}
+		}
+		System.out.println(max);
+		System.out.println(min);
+		//For sum
+		int sum = 0;
+		for(int i=0; i<aHundred.length; i++){
+		    
+		    sum = sum + aHundred[i];
+		}
+		System.out.println(sum);
+		//average
+
+		double average = sum/100;
+		System.out.println(average);
+
+		}
+		}
+	
+
+
