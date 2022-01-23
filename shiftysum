@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class ShiftySum {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner input = new Scanner (System.in);
+System.out.println("Enter N value ");
+int N = input.nextInt();
+
+Scanner input1 = new Scanner(System.in);
+System.out.println("Enter K value ");
+int K = input1.nextInt();
+int kay = 0;
+while (kay<=K) {
+int prevN = N *10;
+int sum = N +prevN;
+kay = kay+1;
+System.out.println(sum);
+	}
+}
+
+
