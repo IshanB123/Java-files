@@ -1,0 +1,53 @@
+import java.util.Arrays;
+import java.util.Scanner;
+public class Shopping {
+
+	public static void printInventory (String[] ItemName, double[]Prices ){
+		System.out.println("Items" +Arrays.toString(ItemName));
+		System.out.println("Price" +Arrays.toString(Prices));
+	}
+	
+	
+	public static void numItems (String[] ItemName) {
+		Scanner input = new Scanner (System.in);
+		System.out.println("How many items would you like?");
+		int numberItems = input.nextInt();
+		for (int i = 0; i<= numberItems;i++ ) {
+			numberItems = numberItems +1;
+			
+			Scanner input1 = new Scanner (System.in);
+			System.out.println("What is the name of the product");
+			String nameObj = input1.next();
+			
+			if (Arrays.asList(ItemName).contains(nameObj)) {
+			
+				Scanner input2 = new Scanner (System.in);
+				System.out.println("How many do you want");
+				int qtyObj = input2.nextInt();
+				System.out.println(qtyObj);
+			}	
+		System.out.println(nameObj);}	
+	}
+	
+
+	
+	
+	
+	
+	
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+ String [] ItemName = new String [] {"PhoneCase", "ChickenMcWrap", "PotatoChips","ChocolateBar", "SunGlasses", "LapTopCase", "WaterBottle", "Headphones", "BubbleGun", "Keychain"};
+ double [] Prices = new double [] {24.99, 6.99, 1.99, 2.49, 19.99, 49.99, 8.49, 9.99, 0.99, 5.99};
+ 
+printInventory(ItemName,Prices );
+numItems(ItemName);
+
+
+
+	}
+
+}
