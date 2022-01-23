@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class QuadrantSelection {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner input = new Scanner(System.in);
+System.out.println("Input value x of coordinates please: ");
+int x = input.nextInt();
+
+Scanner input1 =new Scanner(System.in);
+System.out.println("Input value of y coordinates please ");
+int y =input.nextInt();
+
+if (x>0 && y>0) {
+	System.out.println("Quadrant 1");
+}
+if (x<0 && y>0) {
+	System.out.println("Quadrant 2");
+}
+if (x<0 && y<0) {
+	System.out.println("Quadrant 3");
+}	
+if (x>0 && y<0) {
+	System.out.println("Quadrant 4");
+}
+
+	
+}
+
+}
