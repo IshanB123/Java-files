@@ -1,0 +1,93 @@
+//Name: Ishan Bhatt
+//Date:6/5/2020
+//Purpose: To complete the quadratics task
+
+
+import java.util.Scanner;
+public class Quadratics {
+public static int[] showArray(int[] number) {
+		
+		//This method returns an integer array so it can be used in the other 2 methods
+		return number;
+		
+		}//To close and end the method
+
+		public static void showSForm(int[] number) {
+		
+		//This method shows the quadratic equation inputed in standard form, the parameter required is the number array and it does not return anything
+		int aVal = number[0];//This part is responsible for extracting the a b and c values
+		int bVal = number[1];
+		int cVal = number[2];
+		
+		//To output the values in standard form
+		System.out.println("Standard form:");//this part formats them into the standard form
+		System.out.println(aVal + "x^2 + " + bVal + "x + " + cVal + "= 0");
+		
+		}//To close and end the method
+
+		private static void factoring(int[] number) {
+		//Method used if the values can be factored 
+
+		//To put values given by user into a quadratic equation	and solve the quadratic equation, the parameter required is the number array and it does not return anything
+		int negB = -1 * number[1];
+		int discrim = number[1] * number[1] - 4 * number[0] * number[2];
+		double discrmRoot = Math.sqrt((discrim));
+		int twiceAValue = 2 * number[0];
+		Double root1 = (negB + discrmRoot) / twiceAValue;
+		Double root2 = (negB - discrmRoot) / twiceAValue;
+		
+		//To output and print out roots
+		if (!root1.isNaN() && !root2.isNaN()) {//checks if the values are numbers
+		System.out.println("(x=" + root1 + ")(x= " + root2 + ")");
+		}else {
+			System.out.println("It is not factorable");
+		}
+	
+		}//To close and end the method
+		
+		public static void showFactoredForm(int[]number) {
+			//This part performs the quadratic equation with the values provided by the user, the parameter required is the number array and it does not return anything
+			int negB = -1 * number[1];
+			int discrim = number[1] * number[1] - 4 * number[0] * number[2];
+			double discrmRoot = Math.sqrt((discrim));
+			int twiceAValue = 2 * number[0];
+			Double root1 = (negB + discrmRoot) / twiceAValue;
+			Double root2 = (negB - discrmRoot) / twiceAValue;
+			
+			//To output and print out roots
+			if (!root1.isNaN() && !root2.isNaN()) {//checks if the values are numbers
+			System.out.println("(x=" + root1 + ")(x= " + root2 + ")");
+			}else {
+				System.out.println("It is not factorable");
+			}
+		System.out.println("Factored Form:");//This part formats the factors into the factored form
+		System.out.println("x +"+(root1*-1) +   " , x +"+ (root2*-1));
+		}
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//Asks the user for the values for the quadratic equation
+		Scanner input = new Scanner(System.in);
+	      System.out.println("Enter the value of a:");
+	      int a = input.nextInt();
+
+	      System.out.println("Enter the value of b:");
+	      int b = input.nextInt();
+
+	      System.out.println("Enter the value of c:");
+	      int c = input.nextInt();
+	     
+	    //To put all values into an array to be used by the methods
+		int [] factorList = {a,b,c};
+		
+		//To call each method
+		showArray(factorList);
+		showSForm(factorList);
+		factoring(factorList);
+		showFactoredForm(factorList);
+
+	}
+
+}
