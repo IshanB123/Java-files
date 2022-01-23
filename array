@@ -1,0 +1,29 @@
+//Name: Ishan Bhatt
+//Purpose: To manipulate arrays
+//Date: 5/5/2020
+import java.util.Arrays;
+
+public class Array {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+String [] activities = {"Phone a friend","Play in the backyard","Make lunch for the family","Water the plants","Create a board game"};
+
+//Part A
+String [] reversedActivities = {activities[4],activities[3],activities[2],activities[1],activities[0]};
+System.out.println(Arrays.toString(reversedActivities));
+
+
+
+// Part B
+int length = reversedActivities.length;
+
+for (int i = 0;i<length;i++) {
+	
+	System.out.println(reversedActivities[length-i-1]);
+}
+	}
+
+}
