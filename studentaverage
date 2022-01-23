@@ -1,0 +1,70 @@
+import java.util.Scanner;
+public class StudentAverage {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner input = new Scanner (System.in);
+System.out.println("How many courses are you taking? ");
+int numCourses = input.nextInt();
+////////////////////////////////////////////////////////////////////////////////////////////
+	if (numCourses == 2) {
+	
+	Scanner input1 = new Scanner (System.in);
+	System.out.println("Grade of course 1: ");
+	float c1 = input1.nextInt();
+	
+	Scanner input2 = new Scanner (System.in);
+	System.out.println("Grade if course 2: ");
+	float c2 = input2.nextInt();
+	
+	float average = (c1 + c2)/2;
+	System.out.println("Your average is " + average);
+	}
+//////////////////////////////////////////////////////////////////////////////////////////////
+	if (numCourses == 3) {
+	
+	Scanner input3 = new Scanner (System.in);
+	System.out.println("Grade of course 1: ");
+	float c1 = input3.nextInt();
+	
+	Scanner input4 = new Scanner (System.in);
+	System.out.println("Grade of course 2: ");
+	float c2 = input4.nextInt();
+	
+	Scanner input5 = new Scanner (System.in);
+	System.out.println("Grade of course 3: ");
+	float c3 = input5.nextInt();
+	
+	float average = (c1 +c2 +c3)/3;
+	System.out.println("Your average is " + average);
+	}
+/////////////////////////////////////////////////////////////////////////////////////////////
+	if (numCourses == 4) {
+		Scanner input6 = new Scanner (System.in);
+		System.out.println("Grade of course 1: ");
+		float c1 = input6.nextInt();
+		
+		Scanner input7 = new Scanner (System.in);
+		System.out.println("Grade of course 2: ");
+		float c2 = input7.nextInt();
+		
+		Scanner input8 = new Scanner (System.in);
+		System.out.println("Grade of course 3: ");
+		float c3 = input8.nextInt();
+		
+		Scanner input9 = new Scanner (System.in);
+		System.out.println("Grade of course 4: ");
+		float c4 = input9.nextInt();
+		
+		float average = (c1+c2+c3+c4)/4;
+		System.out.println("Your average is " + average);
+	}
+	
+	
+	
+	
+	
+	
+}
+
+}
